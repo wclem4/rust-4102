@@ -37,9 +37,24 @@ fn main() {
 
     println!("We have found the following column names in the inputted CSV: {:?}", column_names);
 
-    /* prints all data
+    // prints all data
         for row in data {
             println!("{:?}", row);
         }
+    
+    // get column choice, loop until valid (WORK IN PROGRESS) - JS
+    /*
+    let mut column_choice = String::new();
+    loop {
+        println!("Which column would you like to sort by?");
+        io::stdin().read_line(&mut column_choice);
+        println!("choice: {:?}", column_choice.trim().to_string());
+        if column_names.contains(&column_choice) {
+            println!("ok");
+            break
+        }
+        column_choice = "".to_string();
+        println!("Try again.");
+    }
     */
 }
